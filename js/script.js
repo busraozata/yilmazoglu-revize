@@ -14,12 +14,10 @@ $(".card-deck a").fancybox({
 $(".show").click(function () {
   $("#target").show(200);
   $(".show").hide(0);
-  $(".hide").show(0);
 });
 $(".hide").click(function () {
   $("#target").hide(500);
   $(".show").show(0);
-  $(".hide").hide(0);
 });
 $(".toggle").click(function () {
   $("#target").toggle("slow");
