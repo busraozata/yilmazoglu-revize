@@ -386,6 +386,12 @@ header .menu-toggle {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .menu-area .search {
+    display: none;
+  }
+}
+
 .menu-area .mobile {
   margin-top: 5rem;
   margin-left: 1rem;
@@ -400,6 +406,12 @@ header .menu-toggle {
 @media screen and (max-width: 1200px) {
   .menu-area .language {
     margin: 0rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-area .language {
+    margin: 0rem;
   }
 }
 
@@ -432,8 +444,8 @@ header .menu-toggle {
 
 @media screen and (max-width: 991px) {
   .menu-area .language .btn {
-    font-size: 1.4rem;
-    padding: 0.7rem 1.2rem;
+    font-size: 1.3rem;
+    padding: 0.7rem 1rem;
   }
 }
 
@@ -2115,6 +2127,12 @@ header .menu-toggle {
   background-color: #6ab7ed;
 }
 
+@media screen and (max-width: 600px) {
+  .space .col-lg-4 {
+    border-radius: 0rem;
+  }
+}
+
 .space a {
   color: var(--color-blue);
   border: none;
@@ -2175,7 +2193,7 @@ header .menu-toggle {
 @media screen and (max-width: 600px) {
   .space .box {
     height: 5rem;
-    padding: 3rem 2rem 3rem 1rem;
+    padding: 2rem 2rem 2rem 1rem;
   }
 }
 
@@ -2848,7 +2866,7 @@ footer .footer-top .contact-area ul li a {
 }
 
 footer .footer-top .contact-area ul li a:hover {
-  color: var(--color-blue);
+  color: #cdb066;
   font-weight: 500;
 }
 
