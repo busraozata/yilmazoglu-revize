@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Yılmazoğlu Group</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container-fluid">
@@ -32,7 +34,7 @@
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-5 col-4">
-                            <div class="menu-toggle text-center show">
+                            <div class="menu-toggle text-center show-btn">
                                 <img src="./img/menu-toggle.png" class="img-fluid" alt="menu-toggle">
                             </div>
                         </div>
@@ -52,7 +54,7 @@
                 <div class="col-lg-5 col-md-6 col-6 d-flex justify-content-end align-items-center">
                     <div class="d-lg-flex d-none align-items-center">
                         <div class="search">
-                            <a href="#search">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalSearch">
                                 <img src="./img/search.png" class="img-fluid" alt="search-img">
                             </a>
                         </div>
@@ -60,7 +62,7 @@
                             <a href="#" class="btn">EN</a>
                         </div>
                     </div>
-                    <div class="menu-close-toggle hide">
+                    <div class="menu-close-toggle hide-btn">
                         <img src="./img/close.png" class="img-fluid" alt="close-button">
                     </div>
                 </div>
@@ -91,7 +93,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-6 right-area d-flex justify-content-end align-items-end">
                     <div class="contact-area">
@@ -114,9 +116,9 @@
                     <div class="row align-items-center">
                         <div class="col-12 d-flex align-items-center">
                             <div class="search">
-                                <a href="#search">
+                                <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalSearch">
                                     <img src="./img/search.png" class="img-fluid" alt="search-img">
-                                </a>
+                                </button>
                             </div>
                             <div class="language">
                                 <a href="#" class="btn">ING</a>
@@ -124,6 +126,34 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade show " id="exampleModalSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="title">
+                        <h5>Arama
+                            <span>Yap</span>
+                        </h5>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                            <button class="btn">ARA</button>
+                        </div>
+
+                    </form>
+                </div>
+                <!--  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">GÖNDER</button>
+                </div> -->
             </div>
         </div>
     </div>
@@ -164,16 +194,16 @@
                 <h3>Yılmazoğlu Group</h3>
                 <div class="text-area">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
                 </div>
             </div>
@@ -213,6 +243,34 @@
         </div>
     </section>
 
+    <div class="modal fade show " id="exampleModalCV" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="title">
+                        <h5>CV
+                            <span>gonder</span>
+                        </h5>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="file" class="form-control">
+                            <button class="btn">GÖNDER</button>
+                        </div>
+
+                    </form>
+                </div>
+                <!--  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">GÖNDER</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
     <section class="career sub-career">
         <div class="container-fluid">
             <div class="row">
@@ -222,8 +280,8 @@
                 <div class="col-lg-6">
                     <div class="content">
                         <h2>YILMAZOĞLU <span>Kariyer</span> </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                        <a href="#" class="btn d-flex align-items-center">Detaylı Bilgi Alın <i class="fa-solid fa-right-long"></i></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum debitis nisi quas architecto exercitationem deleniti aspernatur modi magnam illum aut eos esse inventore, sunt beatae excepturi autem provident iste libero voluptate in quia officia! Laudantium reiciendis libero laborum eius necessitatibus! Delectus ea sunt neque, exercitationem repellat unde ad vel quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem corporis nisi ipsam soluta, aut animi doloribus reprehenderit debitis deserunt, quia veniam ex quod officia enim nihil, reiciendis officiis illum blanditiis earum eaque quam aliquid dolore atque delectus. In, dolores vel?</p>
+
                     </div>
                 </div>
                 <div class="col-lg-6 right-area">
@@ -235,7 +293,7 @@
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit..Lorem ipsum dolor sit amet, consectetur adipiscing elit..Lorem ipsum dolor sit amet, consectetur adipiscing elit..
                             </p>
-                            <a href="" class="btn"><span>CV</span> GÖNDER</a>
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCV"><span>CV</span> GÖNDER</button>
                         </div>
 
 
@@ -374,7 +432,7 @@
 
         </div>
     </section>
-   
+
     <footer>
         <div class="footer-top">
             <div class="container-fluid">
@@ -394,7 +452,7 @@
                                     Yılmazoğlu Group hakkında güncel haberler için bizi sosyal medya hesaplarımızdan takip edin.
                                 </p>
                                 <div class="social-media">
-                                    <ul class="d-flex gap-3">
+                                    <ul class="d-flex ">
                                         <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                                         <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                                         <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
@@ -478,4 +536,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>

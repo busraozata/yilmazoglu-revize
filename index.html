@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-5 col-4">
-                            <div class="menu-toggle text-center show">
+                            <div class="menu-toggle text-center show-btn">
                                 <img src="./img/menu-toggle.png" class="img-fluid" alt="menu-toggle">
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                 <div class="col-lg-5 col-md-6 col-6 d-flex justify-content-end align-items-center">
                     <div class="d-lg-flex d-none align-items-center">
                         <div class="search">
-                            <a href="#search">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalSearch">
                                 <img src="./img/search.png" class="img-fluid" alt="search-img">
                             </a>
                         </div>
@@ -70,7 +70,7 @@
                             <a href="#" class="btn">EN</a>
                         </div>
                     </div>
-                    <div class="menu-close-toggle hide">
+                    <div class="menu-close-toggle hide-btn">
                         <img src="./img/close.png" class="img-fluid" alt="close-button">
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-6 right-area d-flex justify-content-end align-items-end">
                     <div class="contact-area">
@@ -124,9 +124,9 @@
                     <div class="row align-items-center">
                         <div class="col-12 d-flex align-items-center">
                             <div class="search">
-                                <a href="#search">
+                                <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalSearch">
                                     <img src="./img/search.png" class="img-fluid" alt="search-img">
-                                </a>
+                                </button>
                             </div>
                             <div class="language">
                                 <a href="#" class="btn">ING</a>
@@ -134,6 +134,34 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade show " id="exampleModalSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="title">
+                        <h5>Arama
+                            <span>Yap</span>
+                        </h5>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                            <button class="btn">ARA</button>
+                        </div>
+
+                    </form>
+                </div>
+                <!--  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">GÖNDER</button>
+                </div> -->
             </div>
         </div>
     </div>
@@ -242,13 +270,13 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="box">
-                                    <a href="services.html">
+                                    <a href="continue-project.html">
                                         <div class="img-wrapper">
                                             <img src="./img/project.jpg" class="img-fluid" alt="project">
                                         </div>
                                     </a>
                                     <div class="title">
-                                        <a href="services.html">
+                                        <a href="continue-project.html">
                                             <h5>
                                                 DEVAM EDEN
                                                 PROJELER
@@ -261,18 +289,18 @@
                                             Radem’in devam eden projeleri...
                                         </p>
                                     </div>
-                                    <a href="services.html" class="btn">GÖSTER <i class="fa-solid fa-right-long"></i></a>
+                                    <a href="continue-project.html" class="btn">GÖSTER <i class="fa-solid fa-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="box">
-                                    <a href="services.html">
+                                    <a href="completed-project.html">
                                         <div class="img-wrapper">
                                             <img src="./img/project2.jpg" class="img-fluid" alt="project">
                                         </div>
                                     </a>
                                     <div class="title">
-                                        <a href="services.html">
+                                        <a href="completed-project.html">
                                             <h5>
                                                 TAMAMLANAN
                                                 PROJELER
@@ -285,7 +313,7 @@
                                             amamladığı projeleri inceleyin.
                                         </p>
                                     </div>
-                                    <a href="services.html" class="btn">GÖSTER <i class="fa-solid fa-right-long"></i></a>
+                                    <a href="completed-project.html" class="btn">GÖSTER <i class="fa-solid fa-right-long"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -440,7 +468,7 @@
                                     Yılmazoğlu Group hakkında güncel haberler için bizi sosyal medya hesaplarımızdan takip edin.
                                 </p>
                                 <div class="social-media">
-                                    <ul class="d-flex gap-3">
+                                    <ul class="d-flex ">
                                         <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                                         <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                                         <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
@@ -494,7 +522,7 @@
                     </div>
                     <div class="col-xl-5">
                         <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.0864256756877!2d28.869820776485952!3d40.979588321190064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabd671f7391b7%3A0x9f90d1a19c5df6d2!2zV3VjaXplIHwgV2ViIFRhc2FyxLFtICwgw5xyw7xuIEZvdG_En3JhZiDDh2VraW1pLCBUYW7EsXTEsW0gRmlsbWk!5e0!3m2!1str!2str!4v1691133912582!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.563003221358!2d28.855989376488036!3d41.03481561778967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa52d3c86cc77%3A0x26c21e934f5505a1!2zWcSxbG1hem_En2x1IEhhZnJpeWF0!5e0!3m2!1str!2str!4v1690982008911!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

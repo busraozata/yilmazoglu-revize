@@ -11,13 +11,13 @@ $(".card-deck a").fancybox({
   },
 });
 
-$(".show").click(function () {
+$(".show-btn").click(function () {
   $("#target").show(200);
-  $(".show").hide(0);
+  $(".show-btn").hide(0);
 });
-$(".hide").click(function () {
+$(".hide-btn").click(function () {
   $("#target").hide(500);
-  $(".show").show(0);
+  $(".show-btn").show(0);
 });
 $(".toggle").click(function () {
   $("#target").toggle("slow");

@@ -1557,6 +1557,223 @@ header .menu-toggle {
   }
 }
 
+#exampleModalSearch h5 {
+  color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 3rem;
+  font-style: italic;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  #exampleModalSearch h5 {
+    font-size: 2.5rem;
+  }
+}
+
+#exampleModalSearch h5 span {
+  font-family: "Amalfi Coast";
+  display: block;
+  margin-top: -1rem !important;
+  margin-left: 6.3rem !important;
+  color: #c29e4e;
+}
+
+#exampleModalCV, #exampleModalSearch {
+  z-index: 999999999;
+}
+
+#exampleModalCV .modal-header, #exampleModalSearch .modal-header {
+  background-color: var(--color-blue);
+  border: none;
+}
+
+#exampleModalCV .modal-body, #exampleModalSearch .modal-body {
+  background-color: var(--color-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 9;
+}
+
+#exampleModalCV .modal-body .close-btn, #exampleModalSearch .modal-body .close-btn {
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  background-color: transparent;
+  color: var(--color-white);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 1.5rem;
+  border: none;
+}
+
+#exampleModalCV .modal-body .close-btn:hover, #exampleModalSearch .modal-body .close-btn:hover {
+  color: #cdb066;
+}
+
+#exampleModalCV .modal-body::before, #exampleModalSearch .modal-body::before {
+  content: "";
+  background: url(../img/logo-icon.svg) no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.3;
+  left: 0;
+  bottom: 0;
+}
+
+#exampleModalCV .modal-body h5, #exampleModalSearch .modal-body h5 {
+  color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  #exampleModalCV .modal-body h5, #exampleModalSearch .modal-body h5 {
+    font-size: 2.5rem;
+  }
+}
+
+#exampleModalCV .modal-body h5 span, #exampleModalSearch .modal-body h5 span {
+  font-family: "Amalfi Coast";
+  display: block;
+  margin-top: -2.5rem;
+  margin-left: 2.3rem;
+  color: #c29e4e;
+}
+
+#exampleModalCV .modal-body form, #exampleModalSearch .modal-body form {
+  width: 100%;
+  max-width: 50rem;
+}
+
+#exampleModalCV .modal-body form .form-group, #exampleModalSearch .modal-body form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#exampleModalCV .modal-body form .form-group [type="file"], #exampleModalSearch .modal-body form .form-group [type="file"] {
+  /* Style the color of the message that says 'No file chosen' */
+  /* color: #878787; */
+  color: var(--color-white);
+  font-size: 0.9rem !important;
+  border-left: 1px solid var(--color-white);
+}
+
+#exampleModalCV .modal-body form .form-group [type="file"]::-webkit-file-upload-button, #exampleModalSearch .modal-body form .form-group [type="file"]::-webkit-file-upload-button {
+  background: transparent;
+  border: 2px solid #8dd0f2;
+  border-radius: 0;
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 0rem;
+  outline: none;
+  border-left: 1px solid var(--color-white);
+  padding: 5px 20px;
+  text-transform: uppercase;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#exampleModalCV .modal-body form .form-group [type="file"]::-webkit-file-upload-button:hover, #exampleModalSearch .modal-body form .form-group [type="file"]::-webkit-file-upload-button:hover {
+  background: #fff;
+  border: 2px solid #535353;
+  color: var(--color-white);
+  border-left: 1px solid var(--color-white);
+}
+
+#exampleModalCV .modal-body form .form-group .form-control, #exampleModalSearch .modal-body form .form-group .form-control {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--color-white);
+  color: var(--color-white);
+  padding: 0.8rem 0;
+  border-radius: 0;
+  resize: none;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#exampleModalCV .modal-body form .form-group .form-control:focus, #exampleModalSearch .modal-body form .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  border-bottom: 1px solid var(--color-white);
+}
+
+#exampleModalCV .modal-body form .btn, #exampleModalSearch .modal-body form .btn {
+  margin-top: 3rem;
+  border: 1px solid var(--color-white);
+}
+
+#exampleModalCV .modal-body form .btn:hover, #exampleModalSearch .modal-body form .btn:hover {
+  border: 1px solid #c29e4e;
+}
+
+#exampleModalCV .modal-title, #exampleModalSearch .modal-title {
+  color: var(--color-blue);
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+#exampleModalCV .btn, #exampleModalSearch .btn {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border-radius: 0;
+  border: none;
+  padding: 0.5rem 2.5rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+#exampleModalCV .btn:hover, #exampleModalSearch .btn:hover {
+  background-color: #c29e4e;
+}
+
+#exampleModalCV .btn:focus, #exampleModalSearch .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .career {
   position: relative;
   padding: 3rem 5rem 0rem 5rem;
@@ -1649,7 +1866,13 @@ header .menu-toggle {
 }
 
 .career.sub-career .content {
-  margin-top: 4rem;
+  margin-top: 6rem;
+}
+
+@media screen and (max-width: 1550px) {
+  .career.sub-career .content {
+    margin-top: 4rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -4760,6 +4983,10 @@ footer .footer-top .we-contact {
 
 footer .footer-top .follow-us .social-media {
   margin-top: 1.2rem;
+}
+
+footer .footer-top .follow-us .social-media ul li {
+  margin-right: 1rem;
 }
 
 footer .footer-top .follow-us .social-media ul li a {
