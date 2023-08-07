@@ -97,6 +97,14 @@ var swiperGallery = new Swiper(".ImgGalleryMySwiper", {
 const header = document.querySelector(".header");
 const headerHeight = parseInt(window.getComputedStyle(header).height);
 
+var swiper = new Swiper(".mySwiperDirection", {
+  direction: "vertical",
+  slidesPerView: 3,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 document.addEventListener("scroll", function () {
   if (window.scrollY > headerHeight) {
     header.classList.add("header_scroll");
