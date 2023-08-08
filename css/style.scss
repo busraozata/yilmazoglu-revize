@@ -549,9 +549,8 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 9;
-  @media screen and (max-width: $xl-breakpoint) {
-    padding: 5rem;
-  }
+  overflow: hidden;
+ 
   &:before {
     content: "";
     background-color: #ffffff98;
@@ -570,7 +569,7 @@ header {
     .content {
       padding: 4rem;
       max-width: 60rem;
-      background-color: #0b0c61dc;
+      background-color: #0b0c61c7;
       @media screen and (max-width: $xl-breakpoint) {
         padding: 4rem 2rem;
       }
@@ -578,7 +577,13 @@ header {
         padding-top: 2rem !important;
       }
       .img-wrapper {
-        img {
+        img{
+          width: 100%;
+          @media screen and (max-width:$sm-breakpoint) {
+            max-width: 13rem;
+          }
+        }
+        /* img {
           min-width: 25rem;
           width: 100%;
           margin-bottom: 1rem;
@@ -594,7 +599,7 @@ header {
             height: 4rem;
             object-fit: contain;
           }
-        }
+        } */
       }
       display: flex;
       flex-direction: column;
@@ -1314,18 +1319,28 @@ header {
 }
 #exampleModalCV,
 #exampleModalSearch {
+  background-color: #0000005e;
   z-index: 999999999;
+  border: none;
+  
   .modal-header {
-    background-color: var(--color-blue);
+    background-color: var(--color-white);
+    border: none;
+  }
+  .modal-content{
     border: none;
   }
   .modal-body {
+    padding: 3rem 4rem 4rem 4rem;
+    @media screen and (max-width:$sm-breakpoint) {
+      padding: 3rem 2rem 4rem 2rem;
+    }
     .close-btn {
       position: absolute;
-      right: 3rem;
+      right: 2rem;
       top: 2rem;
       background-color: transparent;
-      color: var(--color-white);
+      color: var(--color-blue);
       box-shadow: none;
       font-size: 1.5rem;
       border: none;
@@ -1333,7 +1348,7 @@ header {
         color: #cdb066;
       }
     }
-    background-color: var(--color-blue);
+    background-color: var(--color-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1348,19 +1363,20 @@ header {
       position: absolute;
       background-position: center;
       z-index: -1;
-      opacity: 0.3;
+      opacity: 0.1;
       left: 0;
       bottom: 0;
     }
     h5 {
-      color: var(--color-white);
+      color: var(--color-blue);
       display: flex;
       flex-direction: column;
       font-size: 3rem;
-      margin-bottom: 4rem;
+      margin-bottom: 6rem;
       font-style: italic;
       @media screen and (max-width: $sm-breakpoint) {
         font-size: 2.5rem;
+        margin-bottom: 4rem;
       }
       span {
         font-family: "Amalfi Coast";
@@ -1372,7 +1388,7 @@ header {
     }
     form {
       width: 100%;
-      max-width: 50rem;
+      max-width: 32rem;
       .form-group {
         display: flex;
         flex-direction: column;
@@ -1386,14 +1402,14 @@ header {
         }
         [type="file"]::-webkit-file-upload-button {
           background: transparent;
-          border: 2px solid #8dd0f2;
+          border: 2px solid var(--color-blue);
           border-radius: 0;
-          color: var(--color-white);
+          color: var(--color-black);
           cursor: pointer;
           font-size: 16px;
           margin-left: 0rem;
           outline: none;
-          border-left: 1px solid var(--color-white);
+          border-left: 2px solid var(--color-blue);
           padding: 5px 20px;
           text-transform: uppercase;
           transition: all 1s ease;
@@ -1408,8 +1424,8 @@ header {
         .form-control {
           background-color: transparent;
           border: 0;
-          border-bottom: 1px solid var(--color-white);
-          color: var(--color-white);
+          border-bottom: 2px solid var(--color-blue);
+          color: var(--color-black);
           padding: 0.8rem 0;
           border-radius: 0;
           resize: none;
@@ -1418,13 +1434,13 @@ header {
           &:focus {
             box-shadow: none;
             border: none;
-            border-bottom: 1px solid var(--color-white);
+            border-bottom: 1px solid var(--color-black);
           }
         }
       }
       .btn {
         margin-top: 3rem;
-        border: 1px solid var(--color-white);
+        border: 1px solid var(--color-blue);
         &:hover {
           border: 1px solid #c29e4e;
         }
@@ -1451,6 +1467,9 @@ header {
     &:focus {
       outline: none;
       box-shadow: none;
+    }
+    @media screen and (max-width:$sm-breakpoint) {
+      padding: 0.5rem 1.5rem;
     }
   }
 }
@@ -3791,12 +3810,12 @@ header {
     }
   }
   .content {
-    padding: 4rem 7.5rem 2rem 7.5rem;
+    padding: 4rem 7.5rem 10rem 7.5rem;
     @media screen and (max-width: 1550px) {
-      padding: 4rem 3.5rem 2rem 3.5rem;
+      padding: 4rem 3.5rem 10rem 3.5rem;
     }
     @media screen and (max-width: $xl-breakpoint) {
-      padding: 0rem 3.5rem 2rem 3.5rem;
+      padding: 0rem 3.5rem 10rem 3.5rem;
     }
     @media screen and (max-width: $sm-breakpoint) {
       padding: 0rem 2rem 2rem 2rem;
@@ -3852,12 +3871,25 @@ header {
     }
     .detail {
       strong {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         color: var(--color-blue);
+        @media screen and (max-width:1550px) {
+          font-size: 1.5rem;
+        }
+        @media screen and (max-width:$sm-breakpoint) {
+          font-size: 1.3rem;
+        }
       }
       span {
         color: var(--color-black);
         font-weight: 500;
+        font-size: 1.1rem;
+        @media screen and (max-width:1550px) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width:$sm-breakpoint) {
+          font-size: 0.9rem;
+        }
       }
     }
   }

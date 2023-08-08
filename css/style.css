@@ -653,12 +653,7 @@ header .menu-toggle {
       -ms-flex-align: center;
           align-items: center;
   z-index: 9;
-}
-
-@media screen and (max-width: 1200px) {
-  .coming-soon {
-    padding: 5rem;
-  }
+  overflow: hidden;
 }
 
 .coming-soon:before {
@@ -686,7 +681,7 @@ header .menu-toggle {
 .coming-soon .area .content {
   padding: 4rem;
   max-width: 60rem;
-  background-color: #0b0c61dc;
+  background-color: #0b0c61c7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -714,31 +709,33 @@ header .menu-toggle {
   }
 }
 
+.coming-soon .area .content .img-wrapper {
+  /* img {
+          min-width: 25rem;
+          width: 100%;
+          margin-bottom: 1rem;
+          @media screen and (max-width: 1550px) {
+            min-width: 20rem !important;
+          }
+          @media screen and (max-width: $lg-breakpoint) {
+            min-width: 7rem;
+            max-width: 4rem;
+          }
+          @media screen and (max-width:$sm-breakpoint) {
+            width: 3rem;
+            height: 4rem;
+            object-fit: contain;
+          }
+        } */
+}
+
 .coming-soon .area .content .img-wrapper img {
-  min-width: 25rem;
   width: 100%;
-  margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 1550px) {
-  .coming-soon .area .content .img-wrapper img {
-    min-width: 20rem !important;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .coming-soon .area .content .img-wrapper img {
-    min-width: 7rem;
-    max-width: 4rem;
-  }
 }
 
 @media screen and (max-width: 600px) {
   .coming-soon .area .content .img-wrapper img {
-    width: 3rem;
-    height: 4rem;
-    -o-object-fit: contain;
-       object-fit: contain;
+    max-width: 13rem;
   }
 }
 
@@ -1805,18 +1802,26 @@ header .menu-toggle {
 
 #exampleModalCV,
 #exampleModalSearch {
+  background-color: #0000005e;
   z-index: 999999999;
+  border: none;
 }
 
 #exampleModalCV .modal-header,
 #exampleModalSearch .modal-header {
-  background-color: var(--color-blue);
+  background-color: var(--color-white);
+  border: none;
+}
+
+#exampleModalCV .modal-content,
+#exampleModalSearch .modal-content {
   border: none;
 }
 
 #exampleModalCV .modal-body,
 #exampleModalSearch .modal-body {
-  background-color: var(--color-blue);
+  padding: 3rem 4rem 4rem 4rem;
+  background-color: var(--color-white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1833,13 +1838,20 @@ header .menu-toggle {
   z-index: 9;
 }
 
+@media screen and (max-width: 600px) {
+  #exampleModalCV .modal-body,
+  #exampleModalSearch .modal-body {
+    padding: 3rem 2rem 4rem 2rem;
+  }
+}
+
 #exampleModalCV .modal-body .close-btn,
 #exampleModalSearch .modal-body .close-btn {
   position: absolute;
-  right: 3rem;
+  right: 2rem;
   top: 2rem;
   background-color: transparent;
-  color: var(--color-white);
+  color: var(--color-blue);
   -webkit-box-shadow: none;
           box-shadow: none;
   font-size: 1.5rem;
@@ -1861,14 +1873,14 @@ header .menu-toggle {
   position: absolute;
   background-position: center;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.1;
   left: 0;
   bottom: 0;
 }
 
 #exampleModalCV .modal-body h5,
 #exampleModalSearch .modal-body h5 {
-  color: var(--color-white);
+  color: var(--color-blue);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1877,7 +1889,7 @@ header .menu-toggle {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   font-style: italic;
 }
 
@@ -1885,6 +1897,7 @@ header .menu-toggle {
   #exampleModalCV .modal-body h5,
   #exampleModalSearch .modal-body h5 {
     font-size: 2.5rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -1900,7 +1913,7 @@ header .menu-toggle {
 #exampleModalCV .modal-body form,
 #exampleModalSearch .modal-body form {
   width: 100%;
-  max-width: 50rem;
+  max-width: 32rem;
 }
 
 #exampleModalCV .modal-body form .form-group,
@@ -1929,14 +1942,14 @@ header .menu-toggle {
 #exampleModalCV .modal-body form .form-group [type="file"]::-webkit-file-upload-button,
 #exampleModalSearch .modal-body form .form-group [type="file"]::-webkit-file-upload-button {
   background: transparent;
-  border: 2px solid #8dd0f2;
+  border: 2px solid var(--color-blue);
   border-radius: 0;
-  color: var(--color-white);
+  color: var(--color-black);
   cursor: pointer;
   font-size: 16px;
   margin-left: 0rem;
   outline: none;
-  border-left: 1px solid var(--color-white);
+  border-left: 2px solid var(--color-blue);
   padding: 5px 20px;
   text-transform: uppercase;
   -webkit-transition: all 1s ease;
@@ -1955,8 +1968,8 @@ header .menu-toggle {
 #exampleModalSearch .modal-body form .form-group .form-control {
   background-color: transparent;
   border: 0;
-  border-bottom: 1px solid var(--color-white);
-  color: var(--color-white);
+  border-bottom: 2px solid var(--color-blue);
+  color: var(--color-black);
   padding: 0.8rem 0;
   border-radius: 0;
   resize: none;
@@ -1969,13 +1982,13 @@ header .menu-toggle {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
-  border-bottom: 1px solid var(--color-white);
+  border-bottom: 1px solid var(--color-black);
 }
 
 #exampleModalCV .modal-body form .btn,
 #exampleModalSearch .modal-body form .btn {
   margin-top: 3rem;
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-blue);
 }
 
 #exampleModalCV .modal-body form .btn:hover,
@@ -2012,6 +2025,13 @@ header .menu-toggle {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+@media screen and (max-width: 600px) {
+  #exampleModalCV .btn,
+  #exampleModalSearch .btn {
+    padding: 0.5rem 1.5rem;
+  }
 }
 
 .career {
@@ -5337,18 +5357,18 @@ header .menu-toggle {
 }
 
 .project-detail .content {
-  padding: 4rem 7.5rem 2rem 7.5rem;
+  padding: 4rem 7.5rem 10rem 7.5rem;
 }
 
 @media screen and (max-width: 1550px) {
   .project-detail .content {
-    padding: 4rem 3.5rem 2rem 3.5rem;
+    padding: 4rem 3.5rem 10rem 3.5rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .project-detail .content {
-    padding: 0rem 3.5rem 2rem 3.5rem;
+    padding: 0rem 3.5rem 10rem 3.5rem;
   }
 }
 
@@ -5434,13 +5454,38 @@ header .menu-toggle {
 }
 
 .project-detail .content .detail strong {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: var(--color-blue);
+}
+
+@media screen and (max-width: 1550px) {
+  .project-detail .content .detail strong {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-detail .content .detail strong {
+    font-size: 1.3rem;
+  }
 }
 
 .project-detail .content .detail span {
   color: var(--color-black);
   font-weight: 500;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1550px) {
+  .project-detail .content .detail span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-detail .content .detail span {
+    font-size: 0.9rem;
+  }
 }
 
 .blog-detail {
