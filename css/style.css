@@ -655,6 +655,12 @@ header .menu-toggle {
   z-index: 9;
 }
 
+@media screen and (max-width: 1200px) {
+  .coming-soon {
+    padding: 5rem;
+  }
+}
+
 .coming-soon:before {
   content: "";
   background-color: #ffffff98;
@@ -696,9 +702,44 @@ header .menu-toggle {
           justify-content: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .coming-soon .area .content {
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .coming-soon .area .content {
+    padding-top: 2rem !important;
+  }
+}
+
 .coming-soon .area .content .img-wrapper img {
   min-width: 25rem;
   width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1550px) {
+  .coming-soon .area .content .img-wrapper img {
+    min-width: 20rem !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .coming-soon .area .content .img-wrapper img {
+    min-width: 7rem;
+    max-width: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .coming-soon .area .content .img-wrapper img {
+    width: 3rem;
+    height: 4rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 .coming-soon .area .content h1 {
@@ -707,7 +748,33 @@ header .menu-toggle {
   color: var(--color-white);
   font-style: italic;
   font-size: 4.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 1550px) {
+  .coming-soon .area .content h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .coming-soon .area .content h1 {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .coming-soon .area .content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .coming-soon .area .content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .coming-soon .area .content .contact-area {
@@ -735,8 +802,20 @@ header .menu-toggle {
   font-weight: 700;
 }
 
+@media screen and (max-width: 1550px) {
+  .coming-soon .area .content .contact-area a {
+    font-size: 0.9rem;
+  }
+}
+
 .coming-soon .area .content .contact-area .address {
   text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .coming-soon .area .content .contact-area .address {
+    margin: 2rem 0rem;
+  }
 }
 
 .coming-soon .area .content .contact-area .address p {
@@ -744,6 +823,12 @@ header .menu-toggle {
   font-size: 1rem;
   font-weight: 500;
   color: var(--color-white);
+}
+
+@media screen and (max-width: 1550px) {
+  .coming-soon .area .content .contact-area .address p {
+    font-size: 0.9rem;
+  }
 }
 
 .coming-soon .area .social-media {
