@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://unpkg.com/swiper@8/swiper-bundle.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -186,7 +187,7 @@
                 <h3><span>Guncel</span> HABERLER</h3>
                 <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </P>
             </div>
-            <div class="last-blog">
+            <div class="last-blog" data-aos="fade-left">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="row align-items-end">
@@ -194,7 +195,7 @@
                                 <div class="title-content">
                                     <h3>Yılmazoğlu Group Avrupa ve Amerika’da</h3>
                                 </div>
-                                <a href="">
+                                <a href="blog-detail.html">
                                     <div class="img-wrapper">
                                         <img src="./img/blog-img.jpg" class="img-fluid" alt="blog">
                                     </div>
@@ -219,14 +220,14 @@
                     <div class="col-xl-9">
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
-                                <div class="box">
-                                    <a href="">
+                                <div class="box" data-aos="fade-up">
+                                    <a href="blog-detail.html">
                                         <div class="img-wrapper">
                                             <img src="./img/blog-img.jpg" class="img-fluid" alt="blog">
                                         </div>
                                     </a>
                                     <div class="title-content">
-                                        <a href="">
+                                        <a href="blog-detail.html">
                                             <h5>Yılmazoğlu Rezidans</h5>
                                         </a>
                                     </div>
@@ -239,14 +240,14 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
-                                <div class="box">
-                                    <a href="">
+                                <div class="box" data-aos="fade-up">
+                                    <a href="blog-detail.html">
                                         <div class="img-wrapper">
                                             <img src="./img/blog-img.jpg" class="img-fluid" alt="blog">
                                         </div>
                                     </a>
                                     <div class="title-content">
-                                        <a href="">
+                                        <a href="blog-detail.html">
                                             <h5>Yılmazoğlu Rezidans</h5>
                                         </a>
                                     </div>
@@ -260,14 +261,14 @@
 
                             </div>
                             <div class="col-lg-6 col-md-6">
-                                <div class="box">
-                                    <a href="">
+                                <div class="box" data-aos="fade-up">
+                                    <a href="blog-detail.html">
                                         <div class="img-wrapper">
                                             <img src="./img/blog-img.jpg" class="img-fluid" alt="blog">
                                         </div>
                                     </a>
                                     <div class="title-content">
-                                        <a href="">
+                                        <a href="blog-detail.html">
                                             <h5>Yılmazoğlu Rezidans</h5>
                                         </a>
                                     </div>
@@ -280,14 +281,14 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
-                                <div class="box">
-                                    <a href="">
+                                <div class="box" data-aos="fade-up">
+                                    <a href="blog-detail.html">
                                         <div class="img-wrapper">
                                             <img src="./img/blog-img.jpg" class="img-fluid" alt="blog">
                                         </div>
                                     </a>
                                     <div class="title-content">
-                                        <a href="">
+                                        <a href="blog-detail.html">
                                             <h5>Yılmazoğlu Rezidans</h5>
                                         </a>
                                     </div>
@@ -315,7 +316,33 @@
             </div>
         </div>
     </section>
+    <div class="modal fade show " id="exampleModalCV" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="title">
+                        <h5>CV
+                            <span>gonder</span>
+                        </h5>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="file" class="form-control">
+                            <button class="btn">GÖNDER</button>
+                        </div>
 
+                    </form>
+                </div>
+                <!--  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">GÖNDER</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
     <section class="space">
         <div class="container">
             <div class="row d-lg-flex ">
@@ -538,6 +565,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.6/swiper-bundle.min.js"></script>

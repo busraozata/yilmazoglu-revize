@@ -112,3 +112,5 @@ document.addEventListener("scroll", function () {
     header.classList.remove("header_scroll");
   }
 });
+
+AOS.init();
